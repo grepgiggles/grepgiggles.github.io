@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+    
+    
+<!--     {% for post in site.posts %}
+    <p><h1>{{ post.title }}</h1></p>
+    <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+    {% endfor %} -->
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
